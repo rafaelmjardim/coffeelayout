@@ -1,24 +1,37 @@
 @media screen and (max-width: 760px){
+    * {
+        max-width: 400px;
+    }
     header {
         background-image: url("../img/mobileheader.jpg");
+        background-position-x: center;
+        max-height: 910px;
+        background-repeat: no-repeat;
     }
     .logo-1 {
        display: none;
     }
-    .menu {
-        max-width: 800px;
-        margin-left: 200px;
-
+    .menu, ul {
+       
+        margin-left: 0px;
+    }
+    ul {
+        max-width: 340px;
+        margin-right: 0;
+        font-size: small;
     }
     li {
         padding: 0;
+        margin: 8px;
     }
     .title {
-        max-width: 760px;
         margin: 0;
-        margin-left: 50px;
         float: left;
         margin-top: 150px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .content, .content-2 {
         padding: 20px;
@@ -26,16 +39,36 @@
     p {
         padding: 15px;
     }
+    .content-mid{
+        display: flex;
+        flex-direction: column;
+
+    }
     .galery {
         max-width:760px;
         flex-wrap: wrap;
+        margin-top: 100px;
     }
+    
     .image {
-        width: 300px;
-        height: 200px;
+        width: 150px;
+        height: 90px;
         margin: 10px;
     }
+    .content-1.footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 200px;
+        
+    }
     footer {
-        padding: 60px;
+        padding: 40px;
+        height: 900px;
+    }
+    h2 {
+        font-size: 30px;
     }
 }
