@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     max-width: 100%;
+    scroll-behavior: smooth;
 }
 .nav-logo{
     width: 70px;
@@ -229,7 +230,7 @@ input:hover {
     flex-wrap: wrap;
     height: 150px;
     background-color: #141414;
-   
+   color: white;
 }
 .footer-final li {
     border: none;
@@ -241,7 +242,7 @@ input:hover {
     margin-right: 160px;
 }
 .rede-social {
-    max-width: 22px;
+    max-width: 20px;
     display: flex;
     flex-direction: row-reverse;
 }
