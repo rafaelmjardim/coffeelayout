@@ -13,6 +13,7 @@
    justify-content: space-between;
    align-items: center;
    padding: 20px;
+   height: 5vh;
 }
 ul {
     display: flex;
@@ -36,12 +37,12 @@ header {
     background-image: url('../img/home-1-slider-image-2.jpg');
     height: 100vh;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .title-bloco {
     display: flex;
-    justify-content: row;
+    flex-direction: row;
     justify-content: end;
-    margin-top: 80px;
     margin-right: 10%;
     margin-left: 10%;
     
@@ -53,6 +54,7 @@ header {
     align-items: center;
     text-align: center;
     color: white;
+    height: 90vh;
 }
 .title h1 {
     font-size: 80px;
@@ -65,7 +67,7 @@ header {
     font-weight: 300;
 
 }
-input {
+.title input {
     cursor: pointer;
     width: 180px;
     height: 50px;
@@ -104,16 +106,28 @@ input:hover {
     
 
 }
+.content-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-img img {
+    width: 100px;
+    margin: 20px;
+    filter: opacity(0.5) drop-shadow(0 0 0 rgb(208, 176, 133));
+}
 .contents {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
+    margin: 0px 40px;
     
 }
 .content-text {
-    max-width: 300px;
-    margin:0px 20px;
+    max-width: 260px;
+    margin:0px 30px;
     
 
 }
@@ -121,27 +135,33 @@ input:hover {
 .color-galeria {
     background-color: rgba(208, 176, 133, 0.76);    
 }
-.content-galeria {
+.content-galeria h2{
     margin-top: 80px;
-    
-    
 }
 .galeria {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .imagens img {
     width: 370px;
-    height: 250px;
+    height: 270px;
     margin: 10px;
 }
-.pre-footer {
-    background-color: bisque;
-    height: 500px;
+.imagens.imagem p{
+    text-align: justify;
+    max-width: 370px;
+    margin-left: 10px;
+    margin-bottom: 30px;
 }
-footer {
+.imagens.imagem h3{
+    text-align: justify;
+    max-width: 370px;
+    margin-left: 10px;
+    margin-top: 20px ;
+}
+.footer {
     background-image: url('../img/cafe1.jpg');
     background-repeat: no-repeat;
     width: 100%;
@@ -151,8 +171,82 @@ footer {
     justify-content: center;
     align-items: center;
     color: white;
+    margin: 0;
 }
-.content.footer h2 p {
-    font-size: 40px;
-    margin: 0px 20px;
+.content-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 120px 20px;
+    max-width: 500px;
 }
+.content-footer h2 {
+    margin-top: 40px;
+}
+.content-footer p {
+    margin-top: 20px;
+}
+.email {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.email input {
+    width: 230px;
+    height: 50px;
+    margin: 20px 0px; 
+    border: 1.5px solid #ffffffbe;
+    background-color: rgba(0, 0, 0, 0.653);
+    color: white;
+}
+.email input::placeholder {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+}
+.email img {
+    width: 25px;
+    margin-top: 12px;
+}
+.fundo-email{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1.5px solid #ffffffbe;
+}
+.fundo-email:hover{
+    opacity: 0.6
+}
+.footer-final {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 150px;
+    background-color: #141414;
+   
+}
+.footer-final li {
+    border: none;
+}
+.footer-final li:hover {
+    color: rgba(208, 176, 133, 0.76);
+}
+.footer-final ul {
+    margin-right: 160px;
+}
+.rede-social {
+    max-width: 22px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.rede-social img {
+    margin-left: 8px;
+}
+
+
