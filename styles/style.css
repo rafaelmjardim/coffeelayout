@@ -126,7 +126,7 @@ input:hover {
     margin: 0px 40px;
     
 }
-.content-text {
+.content-img p {
     max-width: 260px;
     margin:0px 30px;
     
@@ -222,15 +222,22 @@ input:hover {
 .fundo-email:hover{
     opacity: 0.6
 }
+.footer-container {
+    background-color: #141414;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .footer-final {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     height: 150px;
-    background-color: #141414;
-   color: white;
 }
 .footer-final li {
     border: none;
@@ -238,13 +245,12 @@ input:hover {
 .footer-final li:hover {
     color: rgba(208, 176, 133, 0.76);
 }
-.footer-final ul {
-    margin-right: 160px;
-}
 .rede-social {
     max-width: 20px;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 20px;
 }
 .rede-social img {
     margin-left: 8px;
